@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <title>PPT Notes Extraction Assistant</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="header-container">
+                <img src="sph-gen-header.jpg" alt="Header Image" class="header-image">
+            </div>
+            <form id="inputFile" method="post" action="pptNotes.php" enctype="multipart/form-data">
+                <div class="input-group">
+                    <label for="file">Choose pptx file to upload</label>
+                    <input type="file" id="file" name="file" accept=".pptx,.ppt" />
+                    <button type="submit" id="convertButton">Extract Notes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
